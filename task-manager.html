@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEURA Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <div class="brand-name">ABHI</div>
+    <nav>
+      <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="neura-chat.html">Chat</a></li>
+        <li><a href="task-manager.html">Tasks</a></li>
+        <li><a href="notes-board.html">Notes</a></li>
+        <li><a href="focus-prompt.html">Focus</a></li>
+        <li><a href="event-countdown.html">Calendar</a></li>
+        <li><a href="mood-tracker.html">Mood</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="slide">
+    <h2>Task Manager 📝</h2>
+
+    <div class="task-input-container">
+      <input type="text" id="taskInput" placeholder="Enter your task..." />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+  </main>
+
+  <footer id="footer-contact">
+    <p>&copy; 2025 NEURA. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

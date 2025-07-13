@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Countdown</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <section class="slide">
+    <h2>Event Countdown</h2>
+    <div>
+      <input type="datetime-local" id="eventDate" />
+      <button onclick="startCountdown()" style="padding: 10px 25px; font-size: 18px; background: #ff4fc1; color: #000; border: none; border-radius: 8px; cursor: pointer;">
+        Start Countdown
+      </button>
+    </div>
+
+    <div id="countdownDisplay" style="margin-top: 20px; font-size: 24px; font-weight: bold;">
+      <!-- Countdown will be shown here -->
+    </div>
+  </section>
+
+  <script src="event-countdown.js"></script>
+</body>
+</html>

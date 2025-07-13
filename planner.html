@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neura - Planner</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="planner-page">
+    <header>
+        <div class="brand-name">ABHI</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="neura-chat.html">Chat</a></li>
+        <li><a href="task-manager.html">Tasks</a></li>
+        <li><a href="notes-board.html">Notes</a></li>
+        <li><a href="focus-prompt.html">Focus</a></li>
+        <li><a href="event-countdown.html">Calendar</a></li>
+        <li><a href="mood-tracker.html">Mood</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="planner">
+            <h2>Daily Routine Planner</h2>
+            <div class="planner-container">
+                <input type="text" id="activity-input" placeholder="Enter Activity..." />
+                <input type="time" id="start-time" placeholder="Start Time" />
+                <input type="time" id="end-time" placeholder="End Time" />
+                <button id="add-activity-btn">Add Activity</button>
+            </div>
+            <ul id="routine-list">
+                <!-- Routine activities will appear here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Neura - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

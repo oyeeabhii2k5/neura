@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neura Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+
+  <!-- Header -->
+  <header class="dashboard-header">
+    <div class="brand-name">ABHI</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#footer-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Slide -->
+    <section id="home" class="slide active">
+      <h1>Welcome to <span>NEURA</span></h1>
+      <p>This is your personal AI assistant.</p>
+      <img src="images/robo.jfif" alt="Dashboard robot" class="robot-home" />
+
+      <div class="widget-panel">
+        <a href="planner.html">
+          <img src="images/icons/planner.png" class="icon"> Planner
+        </a>
+        <a href="neura-chat.html">
+          <img src="images/icons/chat.webp" class="icon"> Neura Chat
+        </a>
+        <a href="mood-tracker.html">
+          <img src="images/icons/mood.webp" class="icon"> Mood Tracker
+        </a>
+        <a href="task-manager.html">
+          <img src="images/icons/task.jfif" class="icon"> Task Manager
+        </a>
+        <a href="focus-prompt.html">
+          <img src="images/icons/quote.webp" class="icon"> Focus Prompt
+        </a>
+        <a href="notes-board.html">
+          <img src="images/icons/notes.png" class="icon"> Notes Board
+        </a>
+        <a href="event-countdown.html">
+          <img src="images/icons/calendars.jpg" class="icon"> Event Countdown
+        </a>
+      </div>
+    </section>
+
+    <!-- About Slide -->
+    <section id="about" class="slide">
+      <h2>About Me</h2>
+      <img src="images/profile.jpeg" alt="Abhi Profile" class="profile-image"/>
+      <p> Hi there I'm Abhi, a passionate and innovative web developer, AI enthusiast, and digital crfeator. My journey into technology began with a curiosity for how things work and a desire to create experiences that improve people's lives. From building my first website to developing AI-powered tools, my mission has always been the same: to design intutive, accessible, and impactful digital solutions that make a real difference. I'm constantly exploring new twchnologies, learning, and pushing the boundaries of what's possible with code. <br> One of my Proudest creation is "NEURA", an AI-powered assistant designed to help users navigate their daily lives more efficiently and intutively. Neura isn't just about performing tasks - it learns, adapts, and grows with you. Whether you need help organizing your day, tracking your mood, or recieving personalized prompts, Neura is designed to become more useful the more you use it.</p>
+      </section>
+
+    <!-- Skills Slide -->
+    <section id="skills" class="slide">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="circle" data-percent="90"><span>90%</span></div>
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <div class="circle" data-percent="85"><span>85%</span></div>
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <div class="circle" data-percent="83"><span>83%</span></div>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <div class="circle" data-percent="78"><span>78%</span></div>
+          <p>Java</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Slide -->
+    <section id="services" class="slide">
+      <h2>Services</h2>
+      <div class="service-item" onclick="toggleService(this)">
+        Web Development
+        <div class="service-info">Details about web development service...</div>
+      </div>
+      <div class="service-item" onclick="toggleService(this)">
+        UI/UX Design
+        <div class="service-info">Details about UI/UX design service...</div>
+      </div>
+      <div class="service-item" onclick="toggleService(this)">
+        Automation Scripts
+        <div class="service-info">Details about automation script services...</div>
+      </div>
+      <div class="service-item" onclick="toggleService(this)">
+        AI Assistant Setup
+        <div class="service-info">Details about setting up NEURA-style assistants...</div>
+      </div>
+    </section>
+
+    <!-- Portfolio Slide -->
+    <section id="portfolio" class="slide">
+      <h2>Portfolio</h2>
+      <div class="project-gallery">
+        <div class="project" onclick="toggleProjectDescription(this)">
+          <img src="images/portfolio.jpeg" alt="Project 1" />
+          <div class="project-description">
+            <p>This project does amazing things with JavaScript & AI...</p>
+          </div>
+        </div>
+        <div class="project" onclick="toggleProjectDescription(this)">
+          <img src="images/dashboard.jpeg" alt="Project 2" />
+          <div class="project-description">
+            <p>Responsive and elegant design using HTML, CSS & Flexbox...</p>
+          </div>
+        </div>
+        <div class="project" onclick="toggleProjectDescription(this)">
+          <img src="images/photo-diary.jpeg" alt="Project 3" />
+          <div class="project-description">
+            <p>My work with interactive widgets like Mood Trackers & Logs...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Contact -->
+  <footer id="footer-contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="https://instagram.com/oyee.abhii02" target="_blank">Instagram</a>
+      <a href="https://github.com/oyeeabhii2k5" target="_blank">GitHub</a>
+      <p>Email: abhivineet070@gmail.com</p>
+      <p>Phone: +91-9235216320</p>
+      <p>Address: E-6, Magadh Nagar, near Bhagat Singh Circle, Chomu, Jaipur, Rajasthan, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

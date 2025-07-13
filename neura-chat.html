@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neura Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="neura-chat-page">
+
+  <!-- Header Section -->
+  <header class="dashboard-header">
+    <div class="brand-name">ABHI</div>
+    <nav>
+      <ul class="nav-links">
+         <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="neura-chat.html">Chat</a></li>
+        <li><a href="task-manager.html">Tasks</a></li>
+        <li><a href="notes-board.html">Notes</a></li>
+        <li><a href="focus-prompt.html">Focus</a></li>
+        <li><a href="event-countdown.html">Calendar</a></li>
+        <li><a href="mood-tracker.html">Mood</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Chat Section -->
+  <main class="chat-container">
+    <h2>Neura Chat</h2>
+
+    <div class="chat-box">
+      <!-- User & Neura messages -->
+      <div class="messages">
+        <div class="message user-message">
+          <p>Hello Neura! How are you?</p>
+        </div>
+        <div class="message neura-message">
+          <p>I'm doing great! How can I assist you today?</p>
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div class="chat-input">
+        <input type="text" placeholder="Type your message..." id="user-input">
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </main>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
